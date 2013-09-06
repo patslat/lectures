@@ -1,6 +1,6 @@
 #FriendlyId
 
-##Slugs, more than just bananas
+##Slugs, more than just [bananas] [banana-slug-url]
 Slugs are human readable counterparts to numeric URL identifiers, like
 id numbers. They are great for users and search engines, and act just 
 like normal ids:  
@@ -68,3 +68,5 @@ end
 Generate the slug column and index to the table. Extend the model and
 specify the `friendly_id`. Run this from console:
 `ModelName.find_each(&:save)`
+
+[banana-slug-url]: http://en.wikipedia.org/wiki/Banana_slug
