@@ -4,20 +4,19 @@
 Slugs are human readable counterparts to numeric URL identifiers, like
 id numbers. They are great for users and search engines, and act just 
 like normal ids:  
-Instead of this:
-```url
-http://99dogs.com/dogs/1031933301938
-```
-
-You get this:
 ```url
 http://99dogs.com/dogs/apollo
 ```
-
+Instead of:
+```url
+http://99dogs.com/dogs/1031933301938
+```
+And insttead of this:
 ```ruby
 Dog.find(1031933301938)
-
-#same as
+```
+You get this:
+```ruby
 Dog.find('apollo')
 ```
 
