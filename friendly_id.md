@@ -42,7 +42,7 @@ end
 add_index :dogs, :slug, :unique => true # add a unique index on the slug
 ```
 
-after migrating you just need to extend your model and specify what
+After migrating you just need to extend your model and specify what
 should be slugged:
 
 ```ruby
