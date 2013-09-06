@@ -70,7 +70,7 @@ Since you're changing the structure of your API's repsonse, you're going
 to need to account for this in your Collection's parse method:
 
 ```javascript
-#cats.js
+//cats.js
 SweetApp.Collections.Cats = Backbone.Collection.extend({
     parse: function(response) {
         this.page = response.page;

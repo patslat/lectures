@@ -40,7 +40,7 @@ end
 (represented by an int value) or a time proc
 
 ```ruby
-    handle_asynchronously :daily_reminder, run_at => Proc.new { 1.day.from_now }
+handle_asynchronously :daily_reminder, run_at => Proc.new { 1.day.from_now }
 
 #...
 handle_asynchronously :of_utmost_urgency, priority => 9001
