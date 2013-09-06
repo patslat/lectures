@@ -32,13 +32,17 @@ rails g dog name:string age:integer slug:string
 You also need to add an index on it:
 ```ruby
 # db/migrate/*_create_dogs.rb
-create_table do |t|
-    t.string :name
-    t.integer :age
-    t.string :slug # add this to the migration
-end
+class CreateDogs < ActiveRecord::Migration
+    def change
+        create_table :dogs do |t|
+            t.string :name
+            t.integer :age
+            t.string :slug # add this to the migration
+        end
+    end
 
-add_index :dogs, :slug, :unique => true # add a unique index on the slug
+    add_index :dogs, :slug, :unique => true # add a unique index on the slug
+end
 ```
 
 After migrating you just need to extend your model and specify what
