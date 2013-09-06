@@ -50,6 +50,10 @@ def of_utmost_urgency
 end
 handle_asynchronously :of_utmost_urgency, priority => 9001
 ```
+To delay an email, leave off the deliver call.
+```ruby
+UserMailer.delay.welcome_email(user) # don't use deliver
+```
 
 ##Performing the Work
 Ok, now that we've queued up a bunch of processes to be performed in the
