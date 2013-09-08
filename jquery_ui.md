@@ -40,9 +40,25 @@ The fun stuff!
 
 ###Draggable
 Allows users to click and drag your DOM elements. Options include specification of what
-the element is contained in and whether the element should snap to other elements, among
-many others.
+the element is contained in and whether the element should snap to others, among
+many others. This is implemented by setting the element's `position: relative;` and adding
+`left` and `top` css attributes. If you want to persist the layout through sessions you could
+save these coordinates as attributes on your model.  
+While the element is being dragged, it is referred to as a helper. You can set the class of the
+helper element if you want it to be slightly transparent.  
+Events that callbacks can be defined on include the start, stop, and duration dragging.
+
+###Droppable
+Goes hand in hand with draggable. Allows DOM elements to 'accept' draggable objects, from which
+you can define event callbacks. You can also make sure elements are only able to be dropped in these containers.
+
+###Sortable
+Allows user to drag and sort lists or grids. Useful for making a more constrained draggable-droppable UI
+setup. Think [Trello][trello]
+
+##Widgets
 
 
 [jquery_ui]: http://jqueryui.com/
 [jquery_docs]: http://api.jqueryui.com/
+[trello]: http://trello.com/
