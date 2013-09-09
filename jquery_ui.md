@@ -56,7 +56,6 @@ you can define event callbacks. You can also make sure elements are only able to
 Allows user to drag and sort lists or grids. Useful for making a more constrained draggable-droppable UI
 setup. Think [Trello][trello]
 
-##Widgets
 
 
 [jquery_ui]: http://jqueryui.com/
